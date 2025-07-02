@@ -1,3 +1,4 @@
+python-telegram-bot==20.6
 annotated-types==0.7.0
 anyio==4.9.0
 beautifulsoup4==4.13.4
@@ -33,7 +34,7 @@ tzdata==2025.2
 tzlocal==5.3.1
 urllib3==2.5.0
 
-# Windows-only packages (only install on Windows)
+# Windows-only dependencies
 pywin32==310; sys_platform == 'win32'
 pypiwin32==223; sys_platform == 'win32'
 comtypes==1.4.11; sys_platform == 'win32'
