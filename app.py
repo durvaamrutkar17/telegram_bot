@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from telegram.constants import ChatAction
+from flask import Flask, render_template
 
 # --- Load environment variables ---
 load_dotenv()
@@ -81,6 +82,11 @@ def main() -> None:
 
     print("Bot is running...")
     application.run_polling()
+app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 if __name__ == '__main__':
+    app.run(debug=True)
     main()
