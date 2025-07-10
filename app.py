@@ -59,8 +59,7 @@ async def get_openai_response(user_prompt: str) -> str:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
         "Hi! I am an AI assistant providing general information on pregnancy symptoms and care.\n\n"
-        "Ask me a question, like 'What are common symptoms in the first trimester?' or 'Why is folic acid important?'\n\n"
-        "⚠️ *Remember, I am not a doctor. My information is not a substitute for professional medical advice.*"
+        "Ask me a question, like 'What are common symptoms in the first trimester?' or 'Why is folic acid important?'"
     )
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
